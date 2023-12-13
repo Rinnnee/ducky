@@ -1,0 +1,806 @@
+/* one style file can use in many html */
+
+/* if have font file in folder need to do this */
+@font-face {
+    src: url(font/Lumanosimo-Regular.ttf);
+    font-family: Lumonisimo; /* name for select font */
+}
+
+@font-face {
+    src:url(font/Tektur-VariableFont_wdth\,wght.ttf);
+    font-family: Tektur;
+}
+
+/* background of website */
+body{
+    background-image: url(image/1320554.png); /* background image */
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed; 
+    background-size: cover;
+    display: flow-root; /* avoid overflow */
+}
+
+h1{
+    color: white;
+}
+
+/* "color" is color of text */
+/* color can use  rgb(R, G, B), name of color, hex number*/
+#p1{
+    color: red;
+}
+#p2{
+    color: orange;
+}
+#p3{
+    color: aqua;
+}
+#p4{
+    color: yellow;
+}
+
+/* all in odd class will change*/
+.one{
+    color: blueviolet;
+}
+/* all in even class will change*/
+.two{
+    color: greenyellow;
+}
+
+/* font */
+#h1{
+    font-family: Lumanosimo, Tektur;
+}
+#h2{
+    color:antiquewhite;   
+    font-family: Tektur, Lumanosimo; /* backup font if first cant display */
+    font-size:20px;
+    font-size: 1em; /* 1em mean 100% */
+    font-size: 1.1em; /* 1.1em mean 110% */
+    font-size: 1.5em; /* 1.5em mean 150% */
+    font-size: 2em; /* 2em mean 200% */
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Border */
+#h3{
+    color:white;
+    border-style: solid;
+    border-width: 3px;
+    border-color: purple;
+    border-radius: 10px;
+}
+#h4{
+    color:white;
+    border: 3px dashed cyan; /* width, style, bordercolor  */
+    border-radius: 10px;
+}
+#h5{
+    color:white;
+    border-style: dotted;
+    border-width: 3px;
+    border-color: blue;
+    border-radius: 10px;
+}
+#h6{
+    color:white;
+    border-style: double;
+    border-width: 3px;
+    border-color: green;
+    border-radius: 10px;
+}
+#h7{
+    color:white;
+    border-style: groove;
+    border-width: 3px;
+    border-color: yellow;
+    border-radius: 10px;
+}
+#h8{
+    color:white;
+    border-style: ridge;
+    border-width: 3px;
+    border-color:orange;
+    border-radius: 10px;
+}
+#h9{
+    color:white;
+    border-style: inset;
+    border-width: 3px;
+    border-color: orangered;
+    border-radius: 10px;
+}
+#h10{
+    color:white;
+    border-style: outset;
+    border-width: 3px;
+    border-color: red;
+    border-radius: 10px;
+}
+#h11{
+    color:white;
+    border-top: 3px ridge red;
+    border-bottom: 3px ridge green;
+    border-left: 3px ridge blue;
+    border-right: 3px ridge yellow;
+    border-radius: 10px;
+}
+
+/* Shadow */
+#h12{
+    color:yellow;
+    text-shadow: 3px 3px 2px blue ,
+                -3px -3px 2px red; /* x y blur color */
+}
+#box0{
+    width: 100px;
+    height: 100px;
+    background-color:white;
+    box-shadow: 3px 3px 2px purple, 
+                5px 5px 2px cyan,
+                7px 7px 2px blue,
+                9px 9px 2px green,
+                11px 11px 2px yellow,
+                13px 13px 2px orange,
+                15px 15px 2px red;
+}
+
+/* Margin */
+#h13{
+    color: black;
+    background-color: aqua;
+    margin: 100px; /* range from 4 side border */
+}
+.box{
+    color: black;
+    border: 5px solid blueviolet;
+    font-size: 2em;
+    width: 100px;
+    height: 100px;
+}
+#box1{
+    background-color: aquamarine;
+    margin-left: auto;
+}
+#box2{
+    background-color: violet;
+    margin-right: auto;
+}
+#box3{
+    background-color: burlywood;
+    margin: auto;
+}
+
+/* Float */
+.floattext{
+    color: white;
+    font-size: 1.5em;
+}
+#image1{
+    float: left;
+}
+#image2{
+    float: right;
+}
+
+/* Overflow */
+#box4{
+    color: white;
+    border: 3px solid white;
+    height: 100px; /* height is less than text so it call overflow */
+    overflow: visible; /* if overflow what will do */
+}
+#box5{
+    color: white;
+    border: 3px solid white;
+    height: 100px; 
+    overflow: hidden; 
+}
+#box6{
+    color: white;
+    border: 3px solid white;
+    height: 100px; 
+    overflow: clip; /* can assign how many pixel can visible */
+    overflow-clip-margin: 30px;
+}
+#box7{
+    color: white;
+    border: 3px solid white;
+    height: 100px; 
+    overflow: scroll; 
+}
+#box8{
+    color: white;
+    border: 3px solid white;
+    height: 100px; 
+    overflow: auto; /* if need scroll it will appear */
+}
+
+/* Display */
+#box9{
+    font-size: 1.5em;
+    color: black;
+    background-color: red;
+    border: 3px solid white;
+}
+#box10{
+    font-size: 1.5em;
+    color: black;
+    background-color: blue;
+    border: 3px solid white;
+}
+#box11{
+    font-size: 1.5em;
+    color: black;
+    background-color: blueviolet;
+    border: 3px solid white;
+    width: 200px;
+    height: 100px;
+}
+#box12{
+    font-size: 1.5em;
+    color: black;
+    background-color: cyan;
+    border: 3px solid white;
+    width: 100px;
+    height: 100px;
+}
+#box13{
+    font-size: 1.5em;
+    color: black;
+    background-color:aquamarine;
+    border: 3px solid white;
+    width: 300px;
+    height: 100px;
+    display: block;
+}
+#box14{
+    font-size: 1.5em;
+    color: black;
+    background-color: orange;
+    border: 3px solid white;
+    display: inline;
+}
+#box15{
+    font-size: 1.5em;
+    color: black;
+    background-color: orangered;
+    border: 3px solid white;
+    display: inline;
+}
+#box16{
+    font-size: 1.5em;
+    color: black;
+    background-color: orangered;
+    border: 3px solid white;
+    display: inline-block;
+    height: 100px;
+}
+#box17{
+    font-size: 1.5em;
+    color: black;
+    background-color: pink;
+    border: 3px solid white;
+    display: inline-block; /* "none" mean delete */
+    height: 100px;
+    visibility: visible; /* can hide "hidden" */
+}
+
+/* Width and Height */
+#box18{
+    font-size: 1.5em;
+    color: white;
+    padding: 25px; /* padding like margin */
+    border: 3px solid white;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+}
+#box19{
+    font-size: 1.5em;
+    color: white;
+    padding: 25px;
+    border: 3px solid white;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Position */
+#box20{
+    font-size: 1.5em;
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+    position: relative;
+    left: 50px;  /* can assign position */
+}
+#box21{
+    font-size: 1.5em;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    position: fixed;
+    top: 10px;
+    left: 600px;
+}
+#box22{
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    position: relative;
+}
+#box23{
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+}
+#box24{
+    font-size: 1.5em;
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    position: sticky;
+    top: 0px;
+    left: 500px;
+}
+
+/* Combinators */
+#box25{
+    color: white;
+    border: 2px solid white;
+}
+#box25 > p{ /* same level */
+    color: black;
+    background-color: yellow;
+}
+#box25 ~ p{ /* all except p of box25 */ 
+    background-color: cyan;
+}
+#box25 + p{ 
+    background-color: orange;
+}
+
+/* pseudo class */
+#a1{
+    font-size: 1.5em;
+    color: aquamarine;
+}
+#a1:hover{ /* เมาส์จ่อ */
+    color: yellow;
+}
+#a1:active{ /* click */
+    color: red;
+}
+/* fix
+#a1:visited{ 
+    color: blueviolet;
+} 
+*/
+.pseudolist:hover{
+    font-size: 1.5em;
+    color: white;
+    background-color:steelblue;
+}
+.pseudolist:not(:hover){ /* ตัวไม่ได้จ่อ */
+    font-size: 1.5em;
+    color: white;
+    background-color: red;
+}
+.pseudolist:nth-child(){ /* number, odd, even, "3n"=every 3, "3n+1"=every 3 but start at first*/
+    font-size: 1.5em;
+    color: white;
+    background-color: green;
+}
+#box26{
+    color: white;
+    font-size: 1.5em;
+    padding: 20px;
+}
+#box26 p{
+    background-color: aqua;
+    color: black;
+    display: none;
+}
+#box26:hover p{ /* when hover box26 p will display*/
+    display: block;
+}
+
+/* pseudo element */
+#box27{
+    font-size: 1.5em;
+    color: white;
+}
+#box27::first-letter{
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold; 
+}
+#box27::first-line{
+    background-color: black;
+}
+#box27::selection{ /* คลุม, เลือก */
+    color: cyan;
+    background-color: blueviolet;
+}
+#fruit{
+    font-size: 1.5em;
+    color: white;
+}
+#fruit li::before{ /*  before all in list id=fruit */
+    content: "🤣";
+}
+#apple::after{ /* after element id=apple */
+    content: "🍎";
+}
+#orange::after{
+    content: "🍊";
+}
+#banana::after{
+    content: "🍌";
+}
+#fruit li::marker{ /* default is bullet "•" */
+    content: "✓";
+    color: greenyellow;
+    font-size: 1.5em
+}
+
+/* pagination */
+#box28{
+    font-size: 1.5em;
+    color: white;
+}
+.pagination{
+    text-align: center;
+}
+.pagination a{
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none; /* remove underline */
+    padding: 5px 10px; /* x y */
+    font-weight: bold;
+}
+.pagination a.active{
+    color: black;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+.pagination a:hover:not(.active){ /* when hover that not class="active" */
+    background-color: tomato;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* dropdown menu */
+#dropdown{
+    display: inline; /* this div will not take hold line */
+}
+#dropdown button{
+    min-width: 100px;
+    color: black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 1.5em;
+    background-color: violet;
+    cursor: pointer; /* when hover cursor change to pointer*/
+}
+#dropdown a{
+    font-size: 1.5em;
+    display: block;
+    color: black;
+    text-decoration: none; /* remove underline */
+    padding: 10px;
+}
+#dropdown #content{ /* dropdown menu */
+    text-align: center;
+    display: none;
+    border-radius: 10px;
+    position: absolute; /* when it down it will not push another */
+    background-color: aquamarine;
+    min-width: 100px;
+    box-shadow: 5px 5px 5px black;
+}
+#dropdown:hover #content{ /* when hover food button then do this to id=content */
+    display: block;
+}
+#dropdown a:hover{ /* when hover each dropdown menu */
+    background-color: lightgreen;
+    border-radius: 10px;
+    font-weight: bold;
+}
+#dropdown button:hover{ /* when hover main button */
+    background-color: lightpink;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* navigation bar */
+#navbar ul{
+    list-style-type: none; /* ramove bullet point */
+    background-color:aquamarine;
+    padding: 0px; /* ramove padding */
+    margin: 0px; /* remove margin */
+    overflow: hidden; /* hide overflow of each link */
+}
+#navbar a{
+    color: black;
+    text-decoration: none; /* ramove underline */
+    display: block;
+    padding: 10px;
+    text-align: center;
+    
+}
+#navbar a:hover{ /* when hover each */
+    background-color: greenyellow;
+    font-weight: bold;
+}
+#navbar li{ /* make it horizontal */
+    float:left
+}
+#box29{
+    color: white;
+    font-size: 1.5em;
+}
+
+/* layout */
+#layout header{
+    color: white;
+    background-color: blueviolet;
+    padding: 5px;
+    text-align: center;
+}
+#layout nav{
+    color: white;
+    background-color:blue;
+    padding: 5px;
+    text-align: center;
+}
+#layout main{
+    box-sizing: border-box; /* every thing in main will line up */
+    color: white;
+    padding: 15px;
+}
+#layout aside{
+    width: 20%;
+    float: left;
+}
+#layout section{
+    width: 40%;
+    float: left;
+}
+#layout article{
+    width: 40%;
+    float: left;
+}
+#layout footer{
+    display: block;
+    color: white;
+    background-color: blueviolet;
+    padding: 5px;
+    text-align: center;
+    clear: both; /* clear float */
+}
+@media screen and (max-width:600px){ /* for mobile if less than 600px */
+    #layout aside, #layout section, #layout article{
+        width: 100%; /* use one block */
+    }
+}
+
+/* image gallery */
+#gallery{
+    color: white;
+    display: inline-block;
+    border: 1px solid white;
+    margin: 5px;
+    width: 200px; /* กรอบรูป */
+}
+#gallery #description{
+    padding: 10px;
+    text-align: center;
+}
+#gallery:hover{
+    border: 5px solid white;
+    font-weight: bold;
+}
+#gallery img{
+    width: 100%; /* 100% ของกรอบรูป */
+    height: auto;
+}
+
+/* icon */
+#icon{
+    text-align: center;
+}
+#icon a{
+    text-decoration: none; /* remove underline of link */
+    margin-right: 20px;
+}
+.fa-solid.fa-house.fa-5x{ /* replace " " with "." */
+    color: orange;
+}
+.fa-solid.fa-house.fa-5x:hover{ /* when hover */
+    color: orangered;
+}
+.fa-brands.fa-twitter.fa-5x{
+    color: aqua;
+}
+.fa-brands.fa-twitter.fa-5x:hover{
+    color:turquoise;
+}
+.fa-brands.fa-twitch.fa-5x{
+    color: blueviolet;
+}
+.fa-brands.fa-twitch.fa-5x:hover{
+    color: purple;
+}
+.fa-brands.fa-youtube.fa-5x{
+    color: tomato;
+}
+.fa-brands.fa-youtube.fa-5x:hover{
+    color:red;
+}
+
+/* flexbox */
+.flexbox{
+    display: flex; 
+    flex-direction: row; /* row-reverse, coloumn, coloumn-reverse*/
+    justify-content: space-between; /* x direction */ /* space-between, flex-end, center, space-around, space-evenly*/
+    border: 10px solid black;
+    height: 300px;
+    align-items: center; /* y direction */ /* flex-start, baseline, flex-end */
+    flex-wrap: wrap; /* push down when no space enough */ /* nowrap, wrap-reverse */
+    align-content: flex-start; /* no space between line */ /* flex-end, center, space-evenly, space-between */
+    column-gap: 1em; 
+    row-gap: 1em;
+}
+.bigbox{
+    width: 100px;
+    height: 100px;
+    font-size: 6em;
+    text-align: center;
+    border-radius: 10px;
+}
+#smallbox1{
+    background-color: red;
+    align-self: start; /* top of bigbox */ /* center, end*/
+    order: 1; /* 1 is last and -1 is first */
+}
+#smallbox2{
+    background-color: blue;
+}
+#smallbox3{
+    background-color: yellow;
+}
+#smallbox4{
+    background-color: green;
+}
+
+/* tranfomation */
+#box30{
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    font-size: 5em;
+    text-align: center;
+    background-color: red;
+    
+    transform: translateX(); /* move in x  of width */
+    transform: translateY(); /* move in y  of height */
+    transform: translate(); /* move in x y */
+
+    transform: rotateX(); /* rotate x backward forward */
+    transform: rotateY(); /* rotate y left right side */
+    transform: rotateZ(30deg); /* rotate z clockwise */
+
+    transform: scale(); /* scale (x y)*100 */
+
+    transform: skew(); /* เอียง x y */
+
+    transform: translate(), rotate(), scale(), skew();
+}
+
+/* animation */
+#animation img{
+    width: 200px;
+}
+#applecat{
+    animation-duration: 4s;
+    animation-name:slideLeft;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#bananacat{
+    animation-duration: 4s;
+    animation-name:rotate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#happycat{
+    animation-duration: 4s;
+    animation-name:slideRight;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#rgb{
+    border: 2px solid white;
+    font-weight: bold;
+    padding: 10px;
+    width: 50%;
+    height: 30%;
+    text-align: center;
+    font-size: 5em;
+    animation-name: rgbcolor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+#rgb:hover{
+    animation-name: glow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes slideLeft{
+    from{
+        transform: translateX(500px);
+        animation-name:slideRight;
+    }
+}
+@keyframes slideRight{
+    to{
+        transform: translateX(500px);
+        animation-name:slideLeft;
+    }
+}
+@keyframes slideUp{
+    from{
+        transform: translateX(500px);
+    }
+}
+@keyframes slideDown{
+    to{
+        transform: translateX(500px);
+    }
+}
+@keyframes rotate{
+    50%{transform: rotateY(180deg);}
+}
+@keyframes grow{
+    50%{transform: scale(2,2)}
+}
+@keyframes shrink{
+    50%{transform: scale(0.5,0.5)}
+}
+@keyframes fade{
+    50%{opacity: 0;}
+}
+@keyframes rgbcolor{
+    0%{background-color: blueviolet;}
+    12.5%{background-color: lightskyblue;}
+    25%{background-color: cyan;}
+    37.5%{background-color: blue;}
+    50%{background-color: green;}
+    62.5%{background-color: greenyellow;}
+    70%{background-color: yellow;}
+    75%{background-color: orange;}
+    87.5%{background-color: orangered;}
+    100%{background-color: red;}
+}
+@keyframes glow{
+    0%{box-shadow: 0px 0px 20px blueviolet; color:blueviolet;}
+    12.5%{box-shadow: 0px 0px 20px lightskyblue; color:blueviolet;}
+    25%{box-shadow: 0px 0px 20px cyan; color:cyan;}
+    37.5%{box-shadow: 0px 0px 20px blue; color:blue;}
+    50%{box-shadow: 0px 0px 20px green; color:green;}
+    62.5%{box-shadow: 0px 0px 20px greenyellow; color:greenyellow;}
+    70%{box-shadow: 0px 0px 20px yellow; color:yellow;}
+    75%{box-shadow: 0px 0px 20px orange; color:orange;}
+    87.5%{box-shadow: 0px 0px 20px orangered; color:orangered;}
+    100%{box-shadow: 0px 0px 20px red; color:red;}
+}
